@@ -9,7 +9,14 @@
 
 #include <stdio.h>
 #include <tchar.h>
-
+#include <thread>
+#include <atomic>
+#include <memory>
+#include <iostream>
 
 
 // TODO: reference additional headers your program requires here
+#include "boost\asio.hpp"
+#include "Server.h"
+
+const unsigned int DEFAULT_THREAD_POOL_SIZE = 2;
